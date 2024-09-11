@@ -1,9 +1,9 @@
 #include "MicroBit.h"
+#include "inc/neopixel.h"
 
 MicroBit uBit;
 
-int main()
-{
+int feux(){
     uBit.init();
 
     while(1)
@@ -20,5 +20,15 @@ int main()
     }
     
     release_fiber();
+    return 0;
+}
+
+int neopixel(){
+
+}
+
+int main()
+{
+    //feux();
 }
 
